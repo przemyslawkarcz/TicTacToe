@@ -25,18 +25,29 @@ public class Prints {
 
     }
 
-    public void printsWelcomeContent(){
+    public String printsWelcomeContent(){
 
-        System.out.println("* * * Welcome to the TicTacToe game * * *");
-        System.out.println("\nThe game allows you to make up to 9 moves.");
-        System.out.println("Select the coordinates under which you would like to put 'o' or 'x'.");
-        System.out.println("Enter coordinates first horizontally, then vertically and then chosen symbol.\n");
+        String welcome = "* * * Welcome to the TicTacToe game * * *";
+        String the_game = "\nThe game allows you to make up to 9 moves.";
+        String select = "Select the coordinates under which you would like to put 'o' or 'x'.";
+        String enter = "Enter coordinates first horizontally, then vertically and then chosen symbol.\n";
+
+        System.out.println(welcome);
+        System.out.println(the_game);
+        System.out.println(select);
+        System.out.println(enter);
+
+        return welcome;
 
     }
 
-    public void printsWinnings(){
+    public String printsWinnings(){
 
-        System.out.println("Win!");
+        String win = "Win";
+
+        System.out.println(win);
+
+        return win;
 
     }
 
