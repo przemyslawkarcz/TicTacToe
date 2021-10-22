@@ -4,6 +4,29 @@ import org.junit.jupiter.api.Test;
 public class PrintsTest {
 
     @Test
+    public void printsTable2D(){
+
+        TwoDimensionalTable twoDimensionalTable = new TwoDimensionalTable();
+        String[][] table2D = twoDimensionalTable.getTable2D();
+        String[][] table2D_2 = twoDimensionalTable.getTable2D();
+
+        Assertions.assertEquals(table2D_2, table2D);
+
+    }
+
+    @Test
+    public void printsTable2D_2(){
+
+        TwoDimensionalTable twoDimensionalTable = new TwoDimensionalTable();
+        String[][] table2D = twoDimensionalTable.getTable2D();
+
+        String[][] tableTest = new String[][]{};
+
+        Assertions.assertNotEquals(tableTest, table2D);
+
+    }
+
+    @Test
     public void printsWelcomeContent(){
 
         Prints prints = new Prints();
@@ -23,6 +46,5 @@ public class PrintsTest {
         Assertions.assertEquals("Win", winnings);
 
     }
-
-
+    
 }
