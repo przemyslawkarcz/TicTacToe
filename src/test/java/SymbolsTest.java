@@ -119,4 +119,59 @@ public class SymbolsTest {
 
     }
 
+    @Test
+    public void checksEnteredSymbol_O_or_X_Length_01(){
+
+        Symbols symbols = new Symbols();
+        String s = symbols.checksEnteredSymbol_O_or_X("x");
+
+        int length = s.length();
+
+        Assertions.assertEquals(1, length);
+
+    }
+
+    @Test
+    public void checksEnteredSymbol_O_or_X_Length_02(){
+
+        Symbols symbols = new Symbols();
+        String s = symbols.checksEnteredSymbol_O_or_X("o");
+
+        int length = s.length();
+
+        Assertions.assertNotEquals(2, length);
+
+    }
+
+    @Test
+    public void checksEnteredSymbol_O_or_X_Character_01(){
+
+        Symbols symbols = new Symbols();
+        String s = symbols.checksEnteredSymbol_O_or_X("x");
+
+        char c = s.charAt(0);
+
+        boolean b = false;
+
+        if (!Character.isDigit(c)){
+
+            b = true;
+
+        }
+
+        Assertions.assertTrue(b);
+
+    }
+
+    @Test
+    public void checksEnteredSymbol_O_or_X_o_or_x(){
+
+        Symbols symbols = new Symbols();
+        String s = symbols.checksEnteredSymbol_O_or_X("O");
+
+        //XXXXXXXXXXXXX tu skończyłem 22.10 o 16:06
+
+
+    }
+
 }

@@ -1,5 +1,4 @@
 
-
 public class Symbols {
 
     public String checksEnteredSymbolForCoordinates(String someSymbol) {
@@ -59,7 +58,7 @@ public class Symbols {
 
         }
 
-        //checks if it is a String or Character
+        //checks if it is a Character
 
         char c = someSymbol.charAt(0);
 
@@ -67,7 +66,6 @@ public class Symbols {
 
             System.out.println("Characters are allowed!");
             System.exit(0);
-
 
         }
 
