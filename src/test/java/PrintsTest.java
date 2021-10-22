@@ -46,5 +46,5 @@ public class PrintsTest {
         Assertions.assertEquals("Win", winnings);
 
     }
-    
+
 }
