@@ -30,11 +30,13 @@ public class Prints {
         String welcome = "* * * Welcome to the TicTacToe game * * *";
         String the_game = "\nThe game allows you to make up to 9 moves.";
         String select = "Select the coordinates under which you would like to put 'o' or 'x'.";
-        String enter = "Enter coordinates first horizontally, then vertically and then chosen symbol.\n";
+        String select_02 = "When selecting coordinates, use integers ranging from 1 to 3.";
+        String enter = "Enter coordinates first horizontally, then vertically and then chosen symbol 'o' or 'x'.\n";
 
         System.out.println(welcome);
         System.out.println(the_game);
         System.out.println(select);
+        System.out.println(select_02);
         System.out.println(enter);
 
         return welcome;
