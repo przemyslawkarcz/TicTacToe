@@ -7,17 +7,5 @@ public class Closure {
         System.exit(0);
 
     }
-
-    public void stopsGameJustInTime(String keyWord_stop){
-
-        if (keyWord_stop.equals("stop")){
-
-            System.exit(0);
-
-        }
-
-    }
-
-
-
+    
 }
