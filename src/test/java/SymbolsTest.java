@@ -167,10 +167,28 @@ public class SymbolsTest {
     public void checksEnteredSymbol_O_or_X_o_or_x(){
 
         Symbols symbols = new Symbols();
-        String s = symbols.checksEnteredSymbol_O_or_X("O");
+        String s = symbols.checksEnteredSymbol_O_or_X("o");
 
-        //XXXXXXXXXXXXX tu skończyłem 22.10 o 16:06
+        char c = s.charAt(0);
 
+        boolean b = false;
+
+        String o = "o";
+        String x = "x";
+
+        if (!Character.isDigit(c)){
+
+            String valueOf = String.valueOf(c);
+
+            if (valueOf.equalsIgnoreCase(o) || valueOf.equalsIgnoreCase(x)){
+
+                b = true;
+
+            }
+
+        }
+
+        Assertions.assertTrue(b);
 
     }
 
