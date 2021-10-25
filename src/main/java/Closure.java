@@ -7,5 +7,5 @@ public class Closure {
         System.exit(0);
 
     }
-    
+
 }
