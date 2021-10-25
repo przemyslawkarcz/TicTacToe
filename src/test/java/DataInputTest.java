@@ -7,7 +7,6 @@ public class DataInputTest {
     public void charactersEnteringWithDataInput(){
 
         Game game = new Game();
-        TwoDimensionalTable twoDimensionalTable = new TwoDimensionalTable();
 
         String horizontally = "1";
         String vertically = "1";
