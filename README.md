@@ -1,8 +1,8 @@
 # TicTacToe
 
-TicTacToe Game App is a junior level demo application written in Java 10.
+TicTacToe Game App is a junior level demo application written in Java 8.
 
-Technologies used in the project are: IDE - IntelliJ Idea Community; Maven; Java - 10; TDD.
+Technologies used in the project are: IDE - IntelliJ Idea Community; Maven; Java - 8; TDD.
 
 To start, go to the Main class.
 
