@@ -4,6 +4,9 @@ import java.util.Scanner;
 
 public class DataInput {
 
+
+
+
     public static void charactersEntering(){
 
         Prints prints = new Prints();
@@ -11,10 +14,12 @@ public class DataInput {
         Symbols symbols = new Symbols();
         Game game = new Game();
         TwoDimensionalTable twoDimensionalTable = new TwoDimensionalTable();
+        Winnings winnings = new Winnings();
 
         String enteredSymbolForHorizontalCoordinates;
         String enteredSymbolForVerticalCoordinates;
         String enteredSymbol_o_or_x = "";
+
         int movesCounter = 1;
 
         prints.printsWelcomeContent();
@@ -31,10 +36,10 @@ public class DataInput {
 
                 System.out.print("Move No.: " + movesCounter++);
 
-                System.out.print("\nHorizontal coordinate: ");
+                System.out.print("\nVertical coordinate: ");
                 enteredSymbolForHorizontalCoordinates = symbols.checksEnteredSymbolForCoordinates(scanner.next());
 
-                System.out.print("Vertical coordinate: ");
+                System.out.print("Horizontal coordinate: ");
                 enteredSymbolForVerticalCoordinates = symbols.checksEnteredSymbolForCoordinates(scanner.next());
 
                 System.out.print("'o' or 'x': ");
@@ -43,10 +48,9 @@ public class DataInput {
 
                 game.makesMoveInGame(enteredSymbolForHorizontalCoordinates, enteredSymbolForVerticalCoordinates, enteredSymbol_o_or_x);
 
-            }
+                winnings.checksWinnings();
 
-            Winnings winnings = new Winnings();
-            winnings.checksWinnings();
+            }
 
         }
 

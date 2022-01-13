@@ -31,7 +31,7 @@ public class Prints {
         String the_game = "\nThe game allows you to make up to 9 moves.";
         String select = "Select the coordinates under which you would like to put 'o' or 'x'.";
         String select_02 = "When selecting coordinates, use integers ranging from 1 to 3.";
-        String enter = "Enter coordinates first horizontally, then vertically and then chosen symbol 'o' or 'x'.\n";
+        String enter = "Enter coordinates first vertically then horizontally and then chosen symbol 'o' or 'x'.\n";
 
         System.out.println(welcome);
         System.out.println(the_game);
@@ -45,7 +45,7 @@ public class Prints {
 
     public String printsWinnings(){
 
-        String win = "Win";
+        String win = "Win! Game over!";
 
         System.out.println(win);
 

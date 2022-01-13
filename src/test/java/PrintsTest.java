@@ -38,12 +38,22 @@ public class PrintsTest {
 
 
     @Test
-    public void printsWinnings(){
+    public void printsWinnings01(){
 
         Prints prints = new Prints();
         String winnings = prints.printsWinnings();
 
-        Assertions.assertEquals("Win", winnings);
+        Assertions.assertEquals("Win! Game over!", winnings);
+
+    }
+
+    @Test
+    public void printsWinnings02(){
+
+        Prints prints = new Prints();
+        String winnings = prints.printsWinnings();
+
+        Assertions.assertNotEquals("Win! Over!", winnings);
 
     }
 

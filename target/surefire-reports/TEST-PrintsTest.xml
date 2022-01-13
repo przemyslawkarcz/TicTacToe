@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="PrintsTest" time="0" tests="4" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="PrintsTest" time="0" tests="5" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -18,7 +18,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="PL"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-10.0.1\bin"/>
-    <property name="sun.java.command" value="C:\Users\pkarc\AppData\Local\Temp\surefire4368916014446900585\surefirebooter5807370604670562588.jar C:\Users\pkarc\AppData\Local\Temp\surefire4368916014446900585 2022-01-12T15-54-08_284-jvmRun1 surefire12726037686032949241tmp surefire_013345964531973096369tmp"/>
+    <property name="sun.java.command" value="C:\Users\pkarc\AppData\Local\Temp\surefire10461052407479421238\surefirebooter2584785984006646851.jar C:\Users\pkarc\AppData\Local\Temp\surefire10461052407479421238 2022-01-13T09-35-42_798-jvmRun1 surefire9450592652156564690tmp surefire_010258844932620817168tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\pkarc\repositories\TicTacToe\target\test-classes;C:\Users\pkarc\repositories\TicTacToe\target\classes;C:\Users\pkarc\.m2\repository\junit\junit\4.13\junit-4.13.jar;C:\Users\pkarc\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\pkarc\.m2\repository\org\junit\jupiter\junit-jupiter\5.7.0\junit-jupiter-5.7.0.jar;C:\Users\pkarc\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.0\junit-jupiter-api-5.7.0.jar;C:\Users\pkarc\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\pkarc\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\pkarc\.m2\repository\org\junit\platform\junit-platform-commons\1.7.0\junit-platform-commons-1.7.0.jar;C:\Users\pkarc\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.7.0\junit-jupiter-params-5.7.0.jar;C:\Users\pkarc\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.7.0\junit-jupiter-engine-5.7.0.jar;C:\Users\pkarc\.m2\repository\org\junit\platform\junit-platform-engine\1.7.0\junit-platform-engine-1.7.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -34,7 +34,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\pkarc\AppData\Local\Temp\surefire4368916014446900585\surefirebooter5807370604670562588.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\pkarc\AppData\Local\Temp\surefire10461052407479421238\surefirebooter2584785984006646851.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="10.0.1+10"/>
@@ -64,6 +64,7 @@
   </properties>
   <testcase name="printsTable2D" classname="PrintsTest" time="0"/>
   <testcase name="printsWelcomeContent" classname="PrintsTest" time="0"/>
-  <testcase name="printsWinnings" classname="PrintsTest" time="0"/>
+  <testcase name="printsWinnings01" classname="PrintsTest" time="0"/>
+  <testcase name="printsWinnings02" classname="PrintsTest" time="0"/>
   <testcase name="printsTable2D_2" classname="PrintsTest" time="0"/>
 </testsuite>
