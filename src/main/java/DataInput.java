@@ -1,11 +1,6 @@
-
-
 import java.util.Scanner;
 
 public class DataInput {
-
-
-
 
     public static void charactersEntering(){
 

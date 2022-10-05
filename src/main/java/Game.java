@@ -1,5 +1,4 @@
 
-
 public class Game{
 
     public String[][] makesMoveInGame(String horizontally, String vertically, String circle_or_cross){

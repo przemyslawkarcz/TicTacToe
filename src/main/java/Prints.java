@@ -1,5 +1,4 @@
 
-
 public class Prints {
 
     public void printsTable2D(){

@@ -1,5 +1,4 @@
 
-
 public class TwoDimensionalTable {
 
     public static String[][] table2D = new String[3][3];
