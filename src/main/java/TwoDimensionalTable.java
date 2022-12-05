@@ -26,4 +26,5 @@ public class TwoDimensionalTable {
     public void setTable2D(String[][] table2D) {
         TwoDimensionalTable.table2D = table2D;
     }
+
 }
