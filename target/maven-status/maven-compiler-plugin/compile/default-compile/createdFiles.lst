@@ -1,8 +1,4 @@
-Main.class
-Winnings.class
-Game.class
-TwoDimensionalTable.class
-Prints.class
-DataInput.class
-Symbols.class
-Closure.class
+OX_GameBoard\GameBoard.class
+Shutdown\GameInterruptClass.class
+Credit\Awards.class
+AppRunner.class
