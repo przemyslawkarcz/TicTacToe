@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class PlayerInputData {
 
-    public static void takesCoordinatesAndPlayerSymbolSelection(){
+    protected static void gameRunner(){
 
         Scanner scanner = new Scanner(System.in);
         OX_GameFacade ox_gameFacade = new OX_GameFacade();

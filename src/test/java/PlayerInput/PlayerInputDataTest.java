@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 public class PlayerInputDataTest {
 
     @Test
-    public void takesCoordinatesAndPlayerSymbolSelection(){
+    public void gameRunner(){
 
         OX_GameFacade oxGameFacade = new OX_GameFacade();
 
