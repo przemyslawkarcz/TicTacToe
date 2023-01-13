@@ -9,9 +9,11 @@ public class GameBoardTest {
     public void fullFillTable2DWithDefaultValues_01(){
 
         GameBoard gameBoard = new GameBoard();
+        GameBoardFacade gameBoardFacade = new GameBoardFacade();
+
         String[][] table2D = gameBoard.getTable2D();
 
-        gameBoard.takesGameBoardWithInitialData();
+        gameBoardFacade.getResultFromTakesGameBoardWithInitialData();
 
         boolean b = false;
 
@@ -29,9 +31,11 @@ public class GameBoardTest {
     public void fullFillTable2DWithDefaultValues_02(){
 
         GameBoard gameBoard = new GameBoard();
+        GameBoardFacade gameBoardFacade = new GameBoardFacade();
+
         String[][] table2D = gameBoard.getTable2D();
 
-        gameBoard.takesGameBoardWithInitialData();
+        gameBoardFacade.getResultFromTakesGameBoardWithInitialData();
 
         boolean b = false;
 
@@ -49,9 +53,11 @@ public class GameBoardTest {
     public void fullFillTable2DWithDefaultValues_03(){
 
         GameBoard gameBoard = new GameBoard();
+        GameBoardFacade gameBoardFacade = new GameBoardFacade();
+
         String[][] table2D = gameBoard.getTable2D();
 
-        gameBoard.takesGameBoardWithInitialData();
+        gameBoardFacade.getResultFromTakesGameBoardWithInitialData();
 
         Assertions.assertEquals("_", table2D[0][0]);
 
@@ -61,9 +67,11 @@ public class GameBoardTest {
     public void fullFillTable2DWithDefaultValues_04(){
 
         GameBoard gameBoard = new GameBoard();
+        GameBoardFacade gameBoardFacade = new GameBoardFacade();
+
         String[][] table2D = gameBoard.getTable2D();
 
-        gameBoard.takesGameBoardWithInitialData();
+        gameBoardFacade.getResultFromTakesGameBoardWithInitialData();
 
         Assertions.assertNotEquals(",", table2D[0][0]);
 

@@ -4,7 +4,7 @@ public class GameBoard {
 
     public static String[][] table2D = new String[3][3];
 
-    public void takesGameBoardWithInitialData(){
+    protected void takesGameBoardWithInitialData(){
 
         table2D[0][0] = "_";
         table2D[0][1] = "_";

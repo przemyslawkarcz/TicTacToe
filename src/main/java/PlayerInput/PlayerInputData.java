@@ -2,9 +2,8 @@ package PlayerInput;
 
 import Credit.AwardsFacade;
 import Game.OX_GameFacade;
-import Inspection.PlayerDataInspection;
 import Inspection.PlayerDataInspectionFacade;
-import OX_GameBoard.GameBoard;
+import OX_GameBoard.GameBoardFacade;
 import PlayerMessages.Printouts;
 import java.util.Scanner;
 
@@ -14,7 +13,7 @@ public class PlayerInputData {
 
         Scanner scanner = new Scanner(System.in);
         OX_GameFacade ox_gameFacade = new OX_GameFacade();
-        GameBoard gameBoard = new GameBoard();
+        GameBoardFacade gameBoardFacade = new GameBoardFacade();
         Printouts printouts = new Printouts();
         PlayerDataInspectionFacade playerDataInspectionFacade = new PlayerDataInspectionFacade();
         AwardsFacade awardsFacade = new AwardsFacade();
@@ -27,7 +26,7 @@ public class PlayerInputData {
 
         printouts.printsWelcomeContent();
 
-        gameBoard.takesGameBoardWithInitialData();
+        gameBoardFacade.getResultFromTakesGameBoardWithInitialData();
 
         printouts.printsTable2D();
 
