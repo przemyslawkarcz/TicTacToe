@@ -2,7 +2,7 @@ package Inspection;
 
 public class PlayerDataInspection {
 
-    public String checksEnteredSymbolForCoordinates(String someSymbol) {
+    protected String checksEnteredSymbolForCoordinates(String someSymbol) {
 
         //checks length
 

@@ -3,6 +3,7 @@ package PlayerInput;
 import Credit.AwardsFacade;
 import Game.OX_GameFacade;
 import Inspection.PlayerDataInspection;
+import Inspection.PlayerDataInspectionFacade;
 import OX_GameBoard.GameBoard;
 import PlayerMessages.Printouts;
 import java.util.Scanner;
@@ -16,6 +17,7 @@ public class PlayerInputData {
         GameBoard gameBoard = new GameBoard();
         Printouts printouts = new Printouts();
         PlayerDataInspection playerDataInspection = new PlayerDataInspection();
+        PlayerDataInspectionFacade playerDataInspectionFacade = new PlayerDataInspectionFacade();
         AwardsFacade awardsFacade = new AwardsFacade();
 
         String enteredSymbolForHorizontalCoordinates;
@@ -39,10 +41,10 @@ public class PlayerInputData {
                 System.out.print("Move No.: " + movesCounter++);
 
                 System.out.print("\nVertical coordinate: ");
-                enteredSymbolForHorizontalCoordinates = playerDataInspection.checksEnteredSymbolForCoordinates(scanner.next());
+                enteredSymbolForHorizontalCoordinates = playerDataInspectionFacade.getChecksEnteredSymbolForCoordinates(scanner.next());
 
                 System.out.print("Horizontal coordinate: ");
-                enteredSymbolForVerticalCoordinates = playerDataInspection.checksEnteredSymbolForCoordinates(scanner.next());
+                enteredSymbolForVerticalCoordinates = playerDataInspectionFacade.getChecksEnteredSymbolForCoordinates(scanner.next());
 
                 System.out.print("'o' or 'x': ");
                 enteredSymbol_o_or_x = playerDataInspection.checksEnteredSymbol_O_or_X(scanner.next());

@@ -8,8 +8,8 @@ public class PlayerDataInspectionTest {
     @Test
     public void checksEnteredSymbolForCoordinates_Length_01(){
 
-        PlayerDataInspection playerDataInspection = new PlayerDataInspection();
-        String s = playerDataInspection.checksEnteredSymbolForCoordinates("3");
+        PlayerDataInspectionFacade playerDataInspectionFacade = new PlayerDataInspectionFacade();
+        String s = playerDataInspectionFacade.getChecksEnteredSymbolForCoordinates("3");
 
         int length = s.length();
 
@@ -20,8 +20,8 @@ public class PlayerDataInspectionTest {
     @Test
     public void checksEnteredSymbolForCoordinates_Length_02(){
 
-        PlayerDataInspection playerDataInspection = new PlayerDataInspection();
-        String s = playerDataInspection.checksEnteredSymbolForCoordinates("3");
+        PlayerDataInspectionFacade playerDataInspectionFacade = new PlayerDataInspectionFacade();
+        String s = playerDataInspectionFacade.getChecksEnteredSymbolForCoordinates("3");
 
         int length = s.length();
 
@@ -32,8 +32,8 @@ public class PlayerDataInspectionTest {
     @Test
     public void checksEnteredSymbolForCoordinates_Integer_01(){
 
-        PlayerDataInspection playerDataInspection = new PlayerDataInspection();
-        String s = playerDataInspection.checksEnteredSymbolForCoordinates("2");
+        PlayerDataInspectionFacade playerDataInspectionFacade = new PlayerDataInspectionFacade();
+        String s = playerDataInspectionFacade.getChecksEnteredSymbolForCoordinates("2");
 
         int i = Integer.parseInt(s);
 
@@ -46,8 +46,8 @@ public class PlayerDataInspectionTest {
     @Test
     public void checksEnteredSymbolForCoordinates_Integer_02(){
 
-        PlayerDataInspection playerDataInspection = new PlayerDataInspection();
-        String s = playerDataInspection.checksEnteredSymbolForCoordinates("2");
+        PlayerDataInspectionFacade playerDataInspectionFacade = new PlayerDataInspectionFacade();
+        String s = playerDataInspectionFacade.getChecksEnteredSymbolForCoordinates("2");
 
         int i = Integer.parseInt(s);
 
@@ -60,8 +60,8 @@ public class PlayerDataInspectionTest {
     @Test
     public void checksEnteredSymbolForCoordinates_IntegerInRangeFrom1To3_01(){
 
-        PlayerDataInspection playerDataInspection = new PlayerDataInspection();
-        String s = playerDataInspection.checksEnteredSymbolForCoordinates("3");
+        PlayerDataInspectionFacade playerDataInspectionFacade = new PlayerDataInspectionFacade();
+        String s = playerDataInspectionFacade.getChecksEnteredSymbolForCoordinates("3");
 
         int i = Integer.parseInt(s);
 
@@ -92,8 +92,8 @@ public class PlayerDataInspectionTest {
     @Test
     public void checksEnteredSymbolForCoordinates_IntegerInRangeFrom1To3_02(){
 
-        PlayerDataInspection playerDataInspection = new PlayerDataInspection();
-        String s = playerDataInspection.checksEnteredSymbolForCoordinates("1");
+        PlayerDataInspectionFacade playerDataInspectionFacade = new PlayerDataInspectionFacade();
+        String s = playerDataInspectionFacade.getChecksEnteredSymbolForCoordinates("1");
 
         int i = Integer.parseInt(s);
 
