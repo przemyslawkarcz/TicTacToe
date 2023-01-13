@@ -1,6 +1,7 @@
 package PlayerInput;
 
 import Credit.Awards;
+import Credit.AwardsFacade;
 import Game.OX_Game;
 import Inspection.PlayerDataInspection;
 import OX_GameBoard.GameBoard;
@@ -16,7 +17,7 @@ public class PlayerInputData {
         GameBoard gameBoard = new GameBoard();
         Printouts printouts = new Printouts();
         PlayerDataInspection playerDataInspection = new PlayerDataInspection();
-        Awards awards = new Awards();
+        AwardsFacade awardsFacade = new AwardsFacade();
 
         String enteredSymbolForHorizontalCoordinates;
         String enteredSymbolForVerticalCoordinates;
@@ -50,7 +51,7 @@ public class PlayerInputData {
 
                 ox_game.takesNextMoveInGame(enteredSymbolForHorizontalCoordinates, enteredSymbolForVerticalCoordinates, enteredSymbol_o_or_x);
 
-                awards.checksWinnings();
+                awardsFacade.getAwards();
 
             }
 

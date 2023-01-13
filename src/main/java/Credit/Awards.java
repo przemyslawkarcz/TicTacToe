@@ -6,13 +6,13 @@ import Shutdown.GameInterruptClass;
 
 public class Awards {
 
-    public static String x = "x";
-    public static String o = "o";
+    protected static String x = "x";
+    protected static String o = "o";
     GameInterruptClass gameInterruptClass = new GameInterruptClass();
     Printouts printouts = new Printouts();
     GameBoard gameBoard = new GameBoard();
 
-    public void checksWinnings(){
+    protected void checksWinnings(){
 
         checksWinningsThrough00To22();
         checksWinningsThrough20To02();
@@ -27,7 +27,7 @@ public class Awards {
 
     }
 
-    public void checksWinningsThrough00To22(){
+    protected void checksWinningsThrough00To22(){
 
         String[][] table2D = gameBoard.getTable2D();
 
@@ -42,7 +42,7 @@ public class Awards {
 
     }
 
-    public void checksWinningsThrough20To02(){
+    protected void checksWinningsThrough20To02(){
 
         String[][] table2D = gameBoard.getTable2D();
 
@@ -57,7 +57,7 @@ public class Awards {
 
     }
 
-    public void checksWinningsThrough00To02(){
+    protected void checksWinningsThrough00To02(){
 
         String[][] table2D = gameBoard.getTable2D();
 
@@ -72,7 +72,7 @@ public class Awards {
 
     }
 
-    public void checksWinningsThrough10To12(){
+    protected void checksWinningsThrough10To12(){
 
         String[][] table2D = gameBoard.getTable2D();
 
@@ -87,7 +87,7 @@ public class Awards {
 
     }
 
-    public void checksWinningsThrough20To22(){
+    protected void checksWinningsThrough20To22(){
 
         String[][] table2D = gameBoard.getTable2D();
 
@@ -102,7 +102,7 @@ public class Awards {
 
     }
 
-    public void checksWinningsThrough00To20(){
+    protected void checksWinningsThrough00To20(){
 
         String[][] table2D = gameBoard.getTable2D();
 
@@ -117,7 +117,7 @@ public class Awards {
 
     }
 
-    public void checksWinningsThrough01To21(){
+    protected void checksWinningsThrough01To21(){
 
         String[][] table2D = gameBoard.getTable2D();
 
@@ -132,7 +132,7 @@ public class Awards {
 
     }
 
-    public void checksWinningsThrough02To22(){
+    protected void checksWinningsThrough02To22(){
 
         String[][] table2D = gameBoard.getTable2D();
 
