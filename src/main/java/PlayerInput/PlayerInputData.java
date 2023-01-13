@@ -1,8 +1,7 @@
 package PlayerInput;
 
-import Credit.Awards;
 import Credit.AwardsFacade;
-import Game.OX_Game;
+import Game.OX_GameFacade;
 import Inspection.PlayerDataInspection;
 import OX_GameBoard.GameBoard;
 import PlayerMessages.Printouts;
@@ -13,7 +12,7 @@ public class PlayerInputData {
     public static void takesCoordinatesAndPlayerSymbolSelection(){
 
         Scanner scanner = new Scanner(System.in);
-        OX_Game ox_game = new OX_Game();
+        OX_GameFacade ox_gameFacade = new OX_GameFacade();
         GameBoard gameBoard = new GameBoard();
         Printouts printouts = new Printouts();
         PlayerDataInspection playerDataInspection = new PlayerDataInspection();
@@ -49,7 +48,7 @@ public class PlayerInputData {
                 enteredSymbol_o_or_x = playerDataInspection.checksEnteredSymbol_O_or_X(scanner.next());
                 System.out.println();
 
-                ox_game.takesNextMoveInGame(enteredSymbolForHorizontalCoordinates, enteredSymbolForVerticalCoordinates, enteredSymbol_o_or_x);
+                ox_gameFacade.getTakesNextMoveInGame(enteredSymbolForHorizontalCoordinates, enteredSymbolForVerticalCoordinates, enteredSymbol_o_or_x);
 
                 awardsFacade.getAwards();
 

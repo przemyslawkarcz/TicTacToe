@@ -5,7 +5,7 @@ import PlayerMessages.Printouts;
 
 public class OX_Game {
 
-    public String[][] takesNextMoveInGame(String horizontally, String vertically, String circle_or_cross){
+    protected String[][] takesNextMoveInGame(String horizontally, String vertically, String circle_or_cross){
 
         Printouts prints = new Printouts();
         GameBoard gameBoard = new GameBoard();
@@ -21,6 +21,5 @@ public class OX_Game {
 
         return returnedTable2D;
     }
-
 
 }
