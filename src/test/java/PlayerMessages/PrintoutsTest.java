@@ -32,8 +32,8 @@ public class PrintoutsTest {
     @Test
     public void printsWelcomeContent(){
 
-        PrintoutsFacade printoutsFacade = new PrintoutsFacade();
-        String welcomeContent = printoutsFacade.getPrintsWelcomeContent();
+        Printouts printouts = new Printouts();
+        String welcomeContent = printouts.printsWelcomeContent();
 
         Assertions.assertEquals("* * * Welcome to the TicTacToe game * * *", welcomeContent);
 
