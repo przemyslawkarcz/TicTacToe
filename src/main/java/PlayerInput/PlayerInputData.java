@@ -4,7 +4,8 @@ import Credit.AwardsFacade;
 import Game.OX_GameFacade;
 import Inspection.PlayerDataInspectionFacade;
 import OX_GameBoard.GameBoardFacade;
-import PlayerMessages.Printouts;
+import PlayerMessages.PrintoutsFacade;
+
 import java.util.Scanner;
 
 public class PlayerInputData {
@@ -14,7 +15,7 @@ public class PlayerInputData {
         Scanner scanner = new Scanner(System.in);
         OX_GameFacade ox_gameFacade = new OX_GameFacade();
         GameBoardFacade gameBoardFacade = new GameBoardFacade();
-        Printouts printouts = new Printouts();
+        PrintoutsFacade printoutsFacade = new PrintoutsFacade();
         PlayerDataInspectionFacade playerDataInspectionFacade = new PlayerDataInspectionFacade();
         AwardsFacade awardsFacade = new AwardsFacade();
 
@@ -24,11 +25,11 @@ public class PlayerInputData {
 
         int movesCounter = 1;
 
-        printouts.printsWelcomeContent();
+        printoutsFacade.getPrintsWelcomeContent();
 
         gameBoardFacade.getResultFromTakesGameBoardWithInitialData();
 
-        printouts.printsTable2D();
+        printoutsFacade.getPrintsTable2D();
 
         int movesNumberInGame = 9;
         for (int i = 0; i < movesNumberInGame; i++) {

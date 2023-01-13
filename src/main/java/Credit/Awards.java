@@ -1,7 +1,7 @@
 package Credit;
 
 import OX_GameBoard.GameBoard;
-import PlayerMessages.Printouts;
+import PlayerMessages.PrintoutsFacade;
 import Shutdown.GameInterruptClass;
 
 public class Awards {
@@ -9,7 +9,7 @@ public class Awards {
     protected static String x = "x";
     protected static String o = "o";
     GameInterruptClass gameInterruptClass = new GameInterruptClass();
-    Printouts printouts = new Printouts();
+    PrintoutsFacade printoutsFacade = new PrintoutsFacade();
     GameBoard gameBoard = new GameBoard();
 
     protected void checksWinnings(){
@@ -34,7 +34,7 @@ public class Awards {
         if ((table2D[0][0].equalsIgnoreCase(x) && table2D[1][1].equalsIgnoreCase(x) && table2D[2][2].equalsIgnoreCase(x))||
                 (table2D[0][0].equalsIgnoreCase(o) && table2D[1][1].equalsIgnoreCase(o) && table2D[2][2].equalsIgnoreCase(o))){
 
-            printouts.printsWinnings();
+            printoutsFacade.getPrintsWinnings();
 
             gameInterruptClass.stopsGameWithWin();
 
@@ -49,7 +49,7 @@ public class Awards {
         if ((table2D[2][0].equalsIgnoreCase(x) && table2D[1][1].equalsIgnoreCase(x) && table2D[0][2].equalsIgnoreCase(x))||
                 (table2D[2][0].equalsIgnoreCase(o) && table2D[1][1].equalsIgnoreCase(o) && table2D[0][2].equalsIgnoreCase(o))){
 
-            printouts.printsWinnings();
+            printoutsFacade.getPrintsWinnings();
 
             gameInterruptClass.stopsGameWithWin();
 
@@ -64,7 +64,7 @@ public class Awards {
         if ((table2D[0][0].equalsIgnoreCase(x) && table2D[0][1].equalsIgnoreCase(x) && table2D[0][2].equalsIgnoreCase(x))||
                 (table2D[0][0].equalsIgnoreCase(o) && table2D[0][1].equalsIgnoreCase(o) && table2D[0][2].equalsIgnoreCase(o))){
 
-            printouts.printsWinnings();
+            printoutsFacade.getPrintsWinnings();
 
             gameInterruptClass.stopsGameWithWin();
 
@@ -79,7 +79,7 @@ public class Awards {
         if ((table2D[1][0].equalsIgnoreCase(x) && table2D[1][1].equalsIgnoreCase(x) && table2D[1][2].equalsIgnoreCase(x))||
                 (table2D[1][0].equalsIgnoreCase(o) && table2D[1][1].equalsIgnoreCase(o) && table2D[1][2].equalsIgnoreCase(o))){
 
-            printouts.printsWinnings();
+            printoutsFacade.getPrintsWinnings();
 
             gameInterruptClass.stopsGameWithWin();
 
@@ -94,7 +94,7 @@ public class Awards {
         if ((table2D[2][0].equalsIgnoreCase(x) && table2D[2][1].equalsIgnoreCase(x) && table2D[2][2].equalsIgnoreCase(x))||
                 (table2D[2][0].equalsIgnoreCase(o) && table2D[2][1].equalsIgnoreCase(o) && table2D[2][2].equalsIgnoreCase(o))){
 
-            printouts.printsWinnings();
+            printoutsFacade.getPrintsWinnings();
 
             gameInterruptClass.stopsGameWithWin();
 
@@ -109,7 +109,7 @@ public class Awards {
         if ((table2D[0][0].equalsIgnoreCase(x) && table2D[1][0].equalsIgnoreCase(x) && table2D[2][0].equalsIgnoreCase(x))||
                 (table2D[0][0].equalsIgnoreCase(o) && table2D[1][0].equalsIgnoreCase(o) && table2D[2][0].equalsIgnoreCase(o))){
 
-            printouts.printsWinnings();
+            printoutsFacade.getPrintsWinnings();
 
             gameInterruptClass.stopsGameWithWin();
 
@@ -124,7 +124,7 @@ public class Awards {
         if ((table2D[0][1].equalsIgnoreCase(x) && table2D[1][1].equalsIgnoreCase(x) && table2D[2][1].equalsIgnoreCase(x))||
                 (table2D[0][1].equalsIgnoreCase(o) && table2D[1][1].equalsIgnoreCase(o) && table2D[2][1].equalsIgnoreCase(o))){
 
-            printouts.printsWinnings();
+            printoutsFacade.getPrintsWinnings();
 
             gameInterruptClass.stopsGameWithWin();
 
@@ -139,7 +139,7 @@ public class Awards {
         if ((table2D[0][2].equalsIgnoreCase(x) && table2D[1][2].equalsIgnoreCase(x) && table2D[2][2].equalsIgnoreCase(x))||
                 (table2D[0][2].equalsIgnoreCase(o) && table2D[1][2].equalsIgnoreCase(o) && table2D[2][2].equalsIgnoreCase(o))){
 
-            printouts.printsWinnings();
+            printoutsFacade.getPrintsWinnings();
 
             gameInterruptClass.stopsGameWithWin();
 

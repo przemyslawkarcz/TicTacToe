@@ -4,7 +4,7 @@ import OX_GameBoard.GameBoard;
 
 public class Printouts {
 
-    public void printsTable2D(){
+    protected void printsTable2D(){
 
         System.out.println("     1   2   3  ");
         System.out.println(" |||||||||||||||" + "");
@@ -27,7 +27,7 @@ public class Printouts {
 
     }
 
-    public String printsWelcomeContent(){
+    protected String printsWelcomeContent(){
 
         String welcome = "* * * Welcome to the TicTacToe game * * *";
         String the_game = "\nThe game allows you to make up to 9 moves.";
@@ -45,7 +45,7 @@ public class Printouts {
 
     }
 
-    public String printsWinnings(){
+    protected String printsWinnings(){
 
         String win = "Win! Game over!";
 

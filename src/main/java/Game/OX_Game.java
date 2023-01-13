@@ -1,13 +1,13 @@
 package Game;
 
 import OX_GameBoard.GameBoard;
-import PlayerMessages.Printouts;
+import PlayerMessages.PrintoutsFacade;
 
 public class OX_Game {
 
     protected String[][] takesNextMoveInGame(String horizontally, String vertically, String circle_or_cross){
 
-        Printouts prints = new Printouts();
+        PrintoutsFacade printoutsFacade = new PrintoutsFacade();
         GameBoard gameBoard = new GameBoard();
 
         int parseIntHorizontally = Integer.parseInt(horizontally);
@@ -17,7 +17,7 @@ public class OX_Game {
 
         returnedTable2D[parseIntHorizontally - 1][parseIntVertically - 1] = circle_or_cross;
 
-        prints.printsTable2D();
+        printoutsFacade.getPrintsTable2D();
 
         return returnedTable2D;
     }
