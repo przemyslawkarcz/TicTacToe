@@ -9,4 +9,11 @@ public class PlayerDataInspectionFacade {
 
     }
 
+    public String getChecksEnteredSymbol_O_or_X(String someSymbol){
+
+        PlayerDataInspection playerDataInspection = new PlayerDataInspection();
+        return playerDataInspection.checksEnteredSymbol_O_or_X(someSymbol);
+
+    }
+
 }

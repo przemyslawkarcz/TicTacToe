@@ -16,7 +16,6 @@ public class PlayerInputData {
         OX_GameFacade ox_gameFacade = new OX_GameFacade();
         GameBoard gameBoard = new GameBoard();
         Printouts printouts = new Printouts();
-        PlayerDataInspection playerDataInspection = new PlayerDataInspection();
         PlayerDataInspectionFacade playerDataInspectionFacade = new PlayerDataInspectionFacade();
         AwardsFacade awardsFacade = new AwardsFacade();
 
@@ -47,7 +46,7 @@ public class PlayerInputData {
                 enteredSymbolForVerticalCoordinates = playerDataInspectionFacade.getChecksEnteredSymbolForCoordinates(scanner.next());
 
                 System.out.print("'o' or 'x': ");
-                enteredSymbol_o_or_x = playerDataInspection.checksEnteredSymbol_O_or_X(scanner.next());
+                enteredSymbol_o_or_x = playerDataInspectionFacade.getChecksEnteredSymbol_O_or_X(scanner.next());
                 System.out.println();
 
                 ox_gameFacade.getTakesNextMoveInGame(enteredSymbolForHorizontalCoordinates, enteredSymbolForVerticalCoordinates, enteredSymbol_o_or_x);

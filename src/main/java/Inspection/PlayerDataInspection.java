@@ -46,7 +46,7 @@ public class PlayerDataInspection {
 
     }
 
-    public String checksEnteredSymbol_O_or_X(String someSymbol){
+    protected String checksEnteredSymbol_O_or_X(String someSymbol){
 
         //checks length
 

@@ -124,8 +124,8 @@ public class PlayerDataInspectionTest {
     @Test
     public void checksEnteredSymbol_O_or_X_Length_01(){
 
-        PlayerDataInspection playerDataInspection = new PlayerDataInspection();
-        String s = playerDataInspection.checksEnteredSymbol_O_or_X("x");
+        PlayerDataInspectionFacade playerDataInspectionFacade = new PlayerDataInspectionFacade();
+        String s = playerDataInspectionFacade.getChecksEnteredSymbol_O_or_X("x");
 
         int length = s.length();
 
@@ -136,8 +136,8 @@ public class PlayerDataInspectionTest {
     @Test
     public void checksEnteredSymbol_O_or_X_Length_02(){
 
-        PlayerDataInspection playerDataInspection = new PlayerDataInspection();
-        String s = playerDataInspection.checksEnteredSymbol_O_or_X("o");
+        PlayerDataInspectionFacade playerDataInspectionFacade = new PlayerDataInspectionFacade();
+        String s = playerDataInspectionFacade.getChecksEnteredSymbol_O_or_X("o");
 
         int length = s.length();
 
@@ -148,8 +148,8 @@ public class PlayerDataInspectionTest {
     @Test
     public void checksEnteredSymbol_O_or_X_Character_01(){
 
-        PlayerDataInspection playerDataInspection = new PlayerDataInspection();
-        String s = playerDataInspection.checksEnteredSymbol_O_or_X("x");
+        PlayerDataInspectionFacade playerDataInspectionFacade = new PlayerDataInspectionFacade();
+        String s = playerDataInspectionFacade.getChecksEnteredSymbol_O_or_X("x");
 
         char c = s.charAt(0);
 
@@ -168,8 +168,8 @@ public class PlayerDataInspectionTest {
     @Test
     public void checksEnteredSymbol_O_or_X_o_or_x(){
 
-        PlayerDataInspection playerDataInspection = new PlayerDataInspection();
-        String s = playerDataInspection.checksEnteredSymbol_O_or_X("o");
+        PlayerDataInspectionFacade playerDataInspectionFacade = new PlayerDataInspectionFacade();
+        String s = playerDataInspectionFacade.getChecksEnteredSymbol_O_or_X("o");
 
         char c = s.charAt(0);
 
