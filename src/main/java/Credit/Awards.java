@@ -2,13 +2,14 @@ package Credit;
 
 import OX_GameBoard.GameBoard;
 import PlayerMessages.PrintoutsFacade;
-import Shutdown.GameInterruptClass;
+import Shutdown.GameInterruptClassFacade;
 
 public class Awards {
 
     protected static String x = "x";
     protected static String o = "o";
-    GameInterruptClass gameInterruptClass = new GameInterruptClass();
+
+    GameInterruptClassFacade gameInterruptClassFacade = new GameInterruptClassFacade();
     PrintoutsFacade printoutsFacade = new PrintoutsFacade();
     GameBoard gameBoard = new GameBoard();
 
@@ -36,7 +37,7 @@ public class Awards {
 
             printoutsFacade.getPrintsWinnings();
 
-            gameInterruptClass.stopsGameWithWin();
+            gameInterruptClassFacade.getStopsGameWithWin();
 
         }
 
@@ -51,7 +52,7 @@ public class Awards {
 
             printoutsFacade.getPrintsWinnings();
 
-            gameInterruptClass.stopsGameWithWin();
+            gameInterruptClassFacade.getStopsGameWithWin();
 
         }
 
@@ -66,7 +67,7 @@ public class Awards {
 
             printoutsFacade.getPrintsWinnings();
 
-            gameInterruptClass.stopsGameWithWin();
+            gameInterruptClassFacade.getStopsGameWithWin();
 
         }
 
@@ -81,7 +82,7 @@ public class Awards {
 
             printoutsFacade.getPrintsWinnings();
 
-            gameInterruptClass.stopsGameWithWin();
+            gameInterruptClassFacade.getStopsGameWithWin();
 
         }
 
@@ -96,7 +97,7 @@ public class Awards {
 
             printoutsFacade.getPrintsWinnings();
 
-            gameInterruptClass.stopsGameWithWin();
+            gameInterruptClassFacade.getStopsGameWithWin();
 
         }
 
@@ -111,7 +112,7 @@ public class Awards {
 
             printoutsFacade.getPrintsWinnings();
 
-            gameInterruptClass.stopsGameWithWin();
+            gameInterruptClassFacade.getStopsGameWithWin();
 
         }
 
@@ -126,7 +127,7 @@ public class Awards {
 
             printoutsFacade.getPrintsWinnings();
 
-            gameInterruptClass.stopsGameWithWin();
+            gameInterruptClassFacade.getStopsGameWithWin();
 
         }
 
@@ -141,7 +142,7 @@ public class Awards {
 
             printoutsFacade.getPrintsWinnings();
 
-            gameInterruptClass.stopsGameWithWin();
+            gameInterruptClassFacade.getStopsGameWithWin();
 
         }
 

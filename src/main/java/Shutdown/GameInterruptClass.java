@@ -2,7 +2,7 @@ package Shutdown;
 
 public class GameInterruptClass {
 
-    public void stopsGameWithWin(){
+    protected void stopsGameWithWin(){
 
         System.exit(0);
 
