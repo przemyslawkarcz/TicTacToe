@@ -5,6 +5,7 @@ import Game.OX_GameFacade;
 import Inspection.PlayerDataInspectionFacade;
 import OX_GameBoard.GameBoardFacade;
 import PlayerMessages.PrintoutsFacade;
+import Inspection.PlayerDataInspectionFacade;
 
 import java.util.Scanner;
 
@@ -52,6 +53,8 @@ public class PlayerInputData {
                 ox_gameFacade.getTakesNextMoveInGame(enteredSymbolForHorizontalCoordinates, enteredSymbolForVerticalCoordinates, enteredSymbol_o_or_x);
 
                 awardsFacade.getAwards();
+
+                playerDataInspectionFacade.getResultFromMovesNumber(movesCounter);
 
             }
 

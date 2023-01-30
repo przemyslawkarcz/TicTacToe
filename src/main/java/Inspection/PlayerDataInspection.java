@@ -89,4 +89,15 @@ public class PlayerDataInspection {
         return someSymbol;
     }
 
+    protected void checksMovesNumberInGame(int movesNumber){
+
+        if (movesNumber > 9){
+
+            System.out.println("The player reached the ninth move in the game. Game over!.");
+            System.exit(0);
+
+        }
+
+    }
+
 }

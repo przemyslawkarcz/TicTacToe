@@ -16,4 +16,11 @@ public class PlayerDataInspectionFacade {
 
     }
 
+    public void getResultFromMovesNumber(int movesNumber){
+
+        PlayerDataInspection playerDataInspection = new PlayerDataInspection();
+        playerDataInspection.checksMovesNumberInGame(movesNumber);
+
+    }
+
 }
